@@ -11,7 +11,7 @@ library.add(faPortrait, fab, faLaptop, faFolder, faHome)
 
 function App() {
   return (
-    <div className='background-image' style={{backgroundImage:'url(https://i.ibb.co/Q9KyVtf/html-blackandwhite.jpg)'}}>
+    <div>
       <Routes>
         <Route exact path='/' element={<Homepage/>} />
         <Route exact path='/projects' element={<ProjectPage/>} />
