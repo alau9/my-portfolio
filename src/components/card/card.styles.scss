@@ -1,0 +1,15 @@
+.card {
+  margin: 1rem;
+  border: solid;
+  padding: 1rem;
+  width: 20rem;
+
+  .btn {
+    margin-right: 1rem;
+    outline: 0;
+    border: 1px solid black;
+    cursor: pointer;
+    position: relative;
+    background-color: #F79F79;
+  }
+}

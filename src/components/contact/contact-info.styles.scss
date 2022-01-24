@@ -1,0 +1,17 @@
+.contact-info{
+    display: flex;
+    justify-content: center;
+    align-items:baseline;
+
+    .icons{
+        padding-top: 5rem;
+        @media (max-width: 768px) {
+            padding-top: 2rem;
+          }
+        .icon{
+            margin: 2rem;
+            cursor: pointer;
+            color: #E3F09B;
+        }
+    }
+}
