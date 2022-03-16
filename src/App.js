@@ -13,7 +13,7 @@ library.add(faPortrait, fab, faLaptop, faFolder, faHome)
 
 class App extends Component {
   setGA = () => {
-    ReactGA.initialize('G-2T9G4184DV');
+    ReactGA.initialize('UA-223100036-1');
     ReactGA.pageview('Init page view');
   };
   componentDidMount(){
