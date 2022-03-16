@@ -9,7 +9,7 @@ const ProjectPage = () => {
         <h1>Projects</h1>
       </div>
       <CardComponent
-        text="Festival Shred"
+        text="Festival Shred Ecommerce"
         code="https://github.com/alau9/festival-shreds"
         description="Taking what I learned from React to recreate a previouse ecommerce website done with Shopify. Fully functional cart, sign in/sign out, and implemented Stripe for payment method."
         tools="React, Redux, SASS"
