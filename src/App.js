@@ -9,7 +9,6 @@ import { faPortrait, faLaptop, faFolder, faHome } from '@fortawesome/free-solid-
 import ProjectPage from './pages/projects/projects.component';
 import AboutPage from './pages/about/about.component';
 import ReactGA from 'react-ga';
-import { useEffect } from 'react';
 library.add(faPortrait, fab, faLaptop, faFolder, faHome)
 
 function App() {
