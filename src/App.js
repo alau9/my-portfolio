@@ -1,4 +1,4 @@
-import { Component } from "react";
+import React, {useEffect, Component } from "react";
 import Homepage from './pages/homepage/homepage.component';
 import './App.css';
 import ContactInfo from './components/contact/contact-info.component';
@@ -9,17 +9,18 @@ import { faPortrait, faLaptop, faFolder, faHome } from '@fortawesome/free-solid-
 import ProjectPage from './pages/projects/projects.component';
 import AboutPage from './pages/about/about.component';
 import ReactGA from 'react-ga';
+import { useEffect } from 'react';
 library.add(faPortrait, fab, faLaptop, faFolder, faHome)
 
-class App extends Component {
-  setGA = () => {
+function App() {
+
+  useEffect(() => {
     ReactGA.initialize('UA-223100036-1');
-    ReactGA.pageview('Init page view');
-  };
-  componentDidMount(){
-    this.setGA();
-  }
-  render() {
+
+    //to report page view        
+    ReactGA.pageview('/')                          
+  }, []);
+
     return (
       <div>
       <Routes>
@@ -30,7 +31,6 @@ class App extends Component {
       <ContactInfo />
     </div>
     );
-  }
 }
 
 export default App;
