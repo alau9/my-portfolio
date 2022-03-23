@@ -17,7 +17,7 @@ function App() {
     ReactGA.initialize('UA-223100036-1');
 
     //to report page view        
-    ReactGA.pageview('/')                          
+    ReactGA.pageview(window.location.pathname)                          
   }, []);
 
     return (
