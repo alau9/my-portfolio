@@ -9,7 +9,7 @@ const Modal = (props) => {
       <p className="description">{props.description}</p>
       <p className="tools">Tools Used: {props.tools}</p>
       <p className="fineprint">{props.fineprint}</p>
-      <button className="btn" onClick={props.onClose}>
+      <button className="btn fill" onClick={props.onClose}>
         Close
       </button>
     </div>

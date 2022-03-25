@@ -1,12 +1,12 @@
-import React from "react";
-
-
+import React, {useState} from "react";
 import './blurred.styles.scss'
 
-const Blurred = () =>(
-    <div className="blurred">
+const Blurred = ({showColor}) =>{
+
+    return (
+    <div className={`blurred ${showColor ? "colorChange" : ""}`}>
         
     </div>
-)
+)}
 
 export default Blurred

@@ -7,9 +7,44 @@
   .btn {
     margin-right: 1rem;
     outline: 0;
-    border: 1px solid black;
+    border: 1px solid #000000;
     cursor: pointer;
     position: relative;
-    background-color: #F79F79;
+    background-color: #FCA311;
+    padding: .7rem;
+  }
+
+  .fill:hover,
+  .fill:focus {
+    box-shadow: inset 0 0 0 2em var(--hover);
+  }
+
+  $colors: (
+    fill: #14213D,
+  );
+
+  // Sass variables compile to a static string; CSS variables are dynamic and inherited
+  // Loop through the map and set CSS custom properties using Sass variables
+  @each $button, $color in $colors {
+    .#{$button} {
+      --color: #{$color};
+      --hover: #{adjust-hue($color, 0deg)};
+    }
+  }
+
+  // Now every button will have different colors as set above. We get to use the same structure, only changing the custom properties.
+  button {
+    color: var(--color);
+    transition: 0.25s;
+
+    &:hover,
+    &:focus {
+      border-color: var(--hover);
+      color: white;
+    }
+  }
+
+  code {
+    font: inherit;
   }
 }

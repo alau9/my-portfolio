@@ -11,7 +11,14 @@
         .icon{
             margin: 2rem;
             cursor: pointer;
-            color: #c0d4e7;
+            color: #FCA311;
+            transition: .3s;
+
+            &:hover{
+                color: #14213D;
+            }
         }
+        
     }
+    
 }

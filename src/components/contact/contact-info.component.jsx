@@ -19,7 +19,7 @@ const ContactInfo = () => {
         </Link>
         <FontAwesomeIcon
           onClick={() => openInNewTab("https://github.com/alau9")}
-          className="icon"
+          className="icon fill"
           size="3x"
           icon={["fab", "github-square"]}
         />
