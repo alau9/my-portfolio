@@ -1,24 +1,23 @@
-.contact-info{
-    display: flex;
-    justify-content: center;
-    align-items:baseline;
+.contact-info {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
 
-    .icons{
-        padding-top: 5rem;
-        @media (max-width: 768px) {
-            padding-top: 2rem;
-          }
-        .icon{
-            margin: 2rem;
-            cursor: pointer;
-            color: #FCA311;
-            transition: .3s;
-
-            &:hover{
-                color: #14213D;
-            }
-        }
-        
+  .icons {
+    padding-top: 5rem;
+    z-index: 1;
+    @media (max-width: 768px) {
+      padding-top: 2rem;
     }
-    
+    .icon {
+      margin: 2rem;
+      cursor: pointer;
+      color: #fca311;
+      transition: 0.3s;
+
+      &:hover {
+        color: #14213d;
+      }
+    }
+  }
 }
