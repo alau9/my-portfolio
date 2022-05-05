@@ -13,7 +13,9 @@ const Nav = () => {
   return (
     <div className="nav">
       <div className="title-container">
-        <h1>ANSON LAU</h1>
+        <Link to="/">
+          <h1>ANSON LAU</h1>
+        </Link>
       </div>
       <div className="nav-container">
         <div className="nav-items">

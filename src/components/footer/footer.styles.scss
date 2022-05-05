@@ -6,11 +6,19 @@
     color: grey;
     display: flex;
     justify-content: end;
+
+    @media (max-width: 833px) {
+        height: 100%;
+      }
     
     .footer-nav{
         margin: 2rem;
         display: flex;
         flex-direction: row;
+
+        @media (max-width: 833px) {
+            flex-direction: column;
+          }
     }
      
     .footer-items{
