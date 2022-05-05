@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 
+import Pdf from '../../assets/anson-resume.pdf'
 import { Link } from "react-router-dom";
 
 import "./nav.styles.scss";
@@ -48,9 +49,7 @@ const Nav = () => {
           <div>
             <span
               className="description"
-              onClick={() =>
-                openInNewTab("https://my.indeed.com/p/ansonl-hmyztlt")
-              }
+              onClick={() => openInNewTab(Pdf)}
             >
               Resume
             </span>

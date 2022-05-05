@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import Backdrop from "../backdrop/backdrop.component";
 
 import Modal from "../modal/modal.component.jsx"
@@ -6,17 +6,16 @@ import Modal from "../modal/modal.component.jsx"
 import { useState } from 'react';
 
 import './card.styles.scss'
+import Aos from "aos";
+import "aos/dist/aos.css";
 
 const  CardComponent = (props) => {
   const [showModal, setShowModal] = useState();
 
-  function showModalHandler() {
-    setShowModal(true);
-  }
-
-  function closeModalHandler() {
-    setShowModal(false);
-  }
+  useEffect(() => {
+    Aos.init({ duration: 1500 });
+  }, []);
+ 
 
   const openInNewTab = (url) => {
     const newWindow = window.open(url, "_blank", "noopener,noreferrer");
@@ -24,7 +23,7 @@ const  CardComponent = (props) => {
   };
 
   return (
-    <div className='card'>
+    <div className='card' data-aos={`fade-${props.direction}`}>
       <h2 className="title">{props.text}</h2>
       <div className="description">{props.description}</div>
       <div className="fineprint">{props.fineprint}</div>
@@ -33,8 +32,6 @@ const  CardComponent = (props) => {
         <button className='btn' onClick={() => openInNewTab(props.website)}>See Website</button>
         <button className='btn'  onClick={() => openInNewTab(props.code)}>Code</button>
       </div>
-      {showModal && <Backdrop onClick={closeModalHandler} />}
-      {showModal && <Modal text={props.text} description={props.description} fineprint={props.fineprint}  tools={props.tools} onClose={closeModalHandler} />}
     </div>
   );
 }
