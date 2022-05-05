@@ -1,0 +1,21 @@
+.footer-container{
+    position: relative;
+    background-color: black;
+    height: 10rem;
+    margin-top: 5rem;
+    color: grey;
+    display: flex;
+    justify-content: end;
+    
+    .footer-nav{
+        margin: 2rem;
+        display: flex;
+        flex-direction: row;
+    }
+     
+    .footer-items{
+        cursor: pointer;
+        margin: 1rem;
+        margin-right: 2rem;
+    }
+}

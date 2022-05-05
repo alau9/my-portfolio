@@ -1,0 +1,16 @@
+.contact-page {
+  display: flex;
+  flex-direction: column;
+  margin: 2.5rem;
+  font-size: 1.5rem;
+
+  .links {
+    cursor: pointer;
+    transition-duration: 0.2s;
+
+    &:hover {
+      color: rgb(76, 202, 190);
+      text-decoration: underline;
+    }
+  }
+}

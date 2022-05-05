@@ -3,15 +3,15 @@
   justify-content: center;
   align-items: center;
   text-align: left;
-  padding-top: 15vh;
   flex-direction: column;
+  margin-top: 2.5rem;
 
   .content-container {
-    margin-top: 7rem;
+    margin-top: 0rem;
+    margin-bottom: 2.5rem;
   }
 
   .contents {
-    z-index: 1;
     max-width: 50vw;
     @media (max-width: 768px) {
       max-width: 85vw;

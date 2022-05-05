@@ -1,6 +1,7 @@
 import React, { useEffect, Component } from "react";
-import Homepage from "./pages/homepage/homepage.component";
-import Background from "./components/background/background.component";
+import Nav from "./pages/nav/nav.component";
+import Footer from "./components/footer/footer.component";
+import ContactPage from "./pages/contact/contact.component";
 
 import "./App.css";
 import ContactInfo from "./components/contact/contact-info.component";
@@ -8,7 +9,7 @@ import { Route, Routes } from "react-router-dom";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
 import {
-  faPortrait,
+  faCircle,
   faLaptop,
   faFolder,
   faHome,
@@ -16,7 +17,7 @@ import {
 import ProjectPage from "./pages/projects/projects.component";
 import AboutPage from "./pages/about/about.component";
 import ReactGA from "react-ga";
-library.add(faPortrait, fab, faLaptop, faFolder, faHome);
+library.add(faCircle, fab, faLaptop, faFolder, faHome);
 
 function App() {
   useEffect(() => {
@@ -28,14 +29,18 @@ function App() {
 
   return (
     <div>
-      <div>
-      <Background className="background"/>
+      <div className="page">
+        <Nav />
+        <ContactInfo />
         <Routes>
-          <Route exact path="/" element={<Homepage />} />
+          <Route exact path="/" element={<ProjectPage />} />
           <Route exact path="/projects" element={<ProjectPage />} />
           <Route exact path="/about" element={<AboutPage />} />
+          <Route exact path="/contact" element={<ContactPage />} />
         </Routes>
-        <ContactInfo />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

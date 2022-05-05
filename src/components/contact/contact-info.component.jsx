@@ -13,21 +13,17 @@ const ContactInfo = () => {
   return (
     <div className="contact-info">
       <div className="icons">
-        <Link to="/">
-          {" "}
-          <FontAwesomeIcon className="icon" size="3x" icon="home" />{" "}
-        </Link>
         <FontAwesomeIcon
           onClick={() => openInNewTab("https://github.com/alau9")}
           className="icon fill"
-          size="3x"
-          icon={["fab", "github-square"]}
+          size="2xs"
+          icon={["fab", "github"]}
         />
         <FontAwesomeIcon
         onClick={() => openInNewTab("https://www.linkedin.com/in/anson-lau-78a040211/")}
           className="icon"
-          size="3x"
-          icon={["fab", "linkedin"]}
+          size="2xs"
+          icon={["fab", "linkedin-in"]}
         />
       </div>
     </div>

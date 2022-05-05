@@ -1,5 +1,5 @@
 import React from "react";
-import Blurred from "../../components/blurred/blurred.component";
+
 import ContactInfo from "../../components/contact/contact-info.component";
 
 import "./about.styles.scss";
@@ -21,7 +21,6 @@ const AboutPage = () => (
           for coding.{" "}
         </p>
       </div>
-      <Blurred />
     </div>
   </div>
 );

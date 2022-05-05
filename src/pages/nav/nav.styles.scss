@@ -1,0 +1,43 @@
+.nav {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-top: 5vh;
+  flex-direction: column;
+
+  .title-container {
+    font-size: 1.4rem;
+    margin: 0;
+  }
+
+  .nav-container {
+    margin-top: 1.5rem;
+
+    .circles {
+      display: flex;
+      align-items: center;
+
+      .circle {
+        font-size: 0.3rem;
+      }
+    }
+
+    .nav-items {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .description {
+        margin: 1rem;
+        cursor: pointer;
+        transition-duration: .2s;
+
+        &:hover {
+          color: rgb(76, 202, 190);
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}

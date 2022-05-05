@@ -1,26 +1,13 @@
 *{
-  font-family: 'Lato', sans-serif;
+  font-family: 'Inconsolata', monospace;
 }
 
-.background {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  z-index: 1;
-}
-
-
-.layered {
-  display: grid;
-}
-
-.layered > * {
-  grid-column-start: 1;
-  grid-row-start: 1;
-}
 
 a:-webkit-any-link {
   text-decoration: none;
   color: inherit;
+}
+
+.page{
+  min-height: 90vh;
 }

@@ -1,6 +1,48 @@
-.project-page{
+.project-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .row {
+    width: 100%;
+    height: 28rem;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 2.5rem;
+
+    .image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 40%;
+
+      @media (max-width: 833px) {
+        width: 0%;
+      }
+
+      .medium {
+          height: 25rem;
+          @media (max-width: 833px) {
+            height: 0rem;
+          }
+      }
+
+      #crown{
+         height: 9rem;
+
+         @media (max-width: 833px) {
+          height: 0rem;
+        }
+      }
+    }
+
+    .card {
+      width: 40%;
+
+      @media (max-width: 833px) {
+        width: 100%;
+      }
+    }
+  }
 }

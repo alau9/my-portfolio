@@ -25,13 +25,13 @@ const  CardComponent = (props) => {
 
   return (
     <div className='card'>
-      <h2>{props.text}</h2>
-      <div className='actions'>
-        <button className='btn fill' onClick={showModalHandler}>
-          Description
-        </button>
-        <button className='btn fill' onClick={() => openInNewTab(props.website)}>Website</button>
-        <button className='btn fill'  onClick={() => openInNewTab(props.code)}>Code</button>
+      <h2 className="title">{props.text}</h2>
+      <div className="description">{props.description}</div>
+      <div className="fineprint">{props.fineprint}</div>
+      <div className="tools">Tools used: {props.tools}</div>
+      <div className='actions'> 
+        <button className='btn' onClick={() => openInNewTab(props.website)}>See Website</button>
+        <button className='btn'  onClick={() => openInNewTab(props.code)}>Code</button>
       </div>
       {showModal && <Backdrop onClick={closeModalHandler} />}
       {showModal && <Modal text={props.text} description={props.description} fineprint={props.fineprint}  tools={props.tools} onClose={closeModalHandler} />}
