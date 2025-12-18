@@ -1,9 +1,9 @@
 import React, { useEffect } from "react";
 import CardComponent from "../../components/card/card.component";
 import "./projects.styles.scss";
-import { default as festivalshred } from "../../assets/festival-shred-logo.svg";
-import { default as clearweb } from "../../assets/clear-web-logo.svg";
-import { default as crown } from "../../assets/crown.svg";
+import { default as line } from "../../assets/line-logo.svg";
+import { default as pie } from "../../assets/piechart-logo.svg";
+import { default as archive } from "../../assets/archive.svg";
 import Aos from "aos";
 import "aos/dist/aos.css";
 
@@ -18,12 +18,12 @@ const ProjectPage = () => {
         <CardComponent
           data-aos="fade-right"
           className="card"
-          text="Revenue Forecasting using Holt-Winters and Linear Regression Model"
+          text="Sales Forecasting for Retail Planning"
           code="https://github.com/alau9/revenue-forecasting-time-series"
-          description="Adapted from a real-world revenue forecasting project.
-This portfolio version uses synthetic data while preserving the original forecasting logic, modeling approach, and business assumptions used in a production retail planning environment."
+          description="Adapted from a real-world retail forecasting project. This portfolio version uses synthetic data while preserving the original forecasting logic, business assumptions, and planning workflows used in production environments.
+          The model applies Holt-Winters exponential smoothing and linear regression to forecast revenue across sales channels, product categories, and seasonal groupings, supporting assortment planning, inventory decisions, and financial forecasting."
           tools="Python, NUMPY, PANDAS"
-          fineprint="*Not yet mobile compatible"
+          fineprint=""
           website=""
           direction="right"
         />
@@ -31,8 +31,8 @@ This portfolio version uses synthetic data while preserving the original forecas
           <img
             data-aos="fade-left"
             className="medium"
-            src={festivalshred}
-            alt="Festival-Shred-Logo"
+            src={line}
+            alt="line-logo"
             border="0"
           />
         </div>
@@ -41,19 +41,19 @@ This portfolio version uses synthetic data while preserving the original forecas
         <div className="image-container">
           <img
             className="medium"
-            src={clearweb}
-            alt="Clear-Web-Logo"
+            src={pie}
+            alt="pie-logo"
             border="0"
             data-aos="fade-right"
           />
         </div>
         <CardComponent
           className="card"
-          text="Clear Web"
-          code="https://github.com/alau9/clearweb"
-          description="A mostly static informational website. Main takeaway from this project is learning how to use different packages with react. More focused on styling nuances such as using svg file images and media query to have website mobile compatible."
-          tools="React, SASS, Bootstrap"
-          website="https://clearweb.herokuapp.com/"
+          text="Merchandise Performance Dashboard"
+          code=""
+          description="An interactive Power BI dashboard designed to analyze retail sales and inventory performance across channels and product categories. The project focuses on building a scalable data model and clear performance views to support merchandising and planning decisions."
+          tools="Power BI"
+          website=""
           fineprint=""
           direction="left"
         />
@@ -61,21 +61,21 @@ This portfolio version uses synthetic data while preserving the original forecas
       <div className="row">
         <CardComponent
           className="card"
-          text="Crown Ecommerce"
-          code="https://github.com/alau9/first-ecommerce"
-          description="Ecommerce website I made with the course 'Complete React Developer in 2022 (w/ Redux, Hooks, GraphQL)'. Created a functional cart, sign in/sign out, and implemented Stripe for payment method"
-          tools="React, Redux, SASS"
-          fineprint="*Not yet mobile compatible"
-          website="https://crwn-clothing-al-live.herokuapp.com/"
+          text="Archive"
+          code=""
+          description="An archive of exploratory projects focused on web development, analytics, and applied problem solving."
+          tools=""
+          fineprint=""
+          website=""
           direction="right"
         />
         <div className="image-container">
           <img
             data-aos="fade-left"
-            id="crown"
+            id="archive"
             className="medium"
-            src={crown}
-            alt="Crown-Logo"
+            src={archive}
+            alt="archive-logo"
             border="0"
           />
         </div>
