@@ -21,6 +21,7 @@ const ProjectPage = () => {
           text="Sales Forecasting for Retail Planning"
           code="https://github.com/alau9/revenue-forecasting-time-series"
           description="A retail revenue forecasting model using synthetic data, applying Holt-Winters and linear regression to support assortment, inventory, and financial planning across channels and categories."
+          tools="Python, NUMPY, PANDAS"
           fineprint=""
           website=""
           direction="right"
