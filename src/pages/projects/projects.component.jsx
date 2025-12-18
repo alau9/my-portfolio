@@ -18,17 +18,18 @@ const ProjectPage = () => {
         <CardComponent
           data-aos="fade-right"
           className="card"
-          text="Festival Shred Ecommerce"
-          code="https://github.com/alau9/festival-shreds"
-          description="Taking what I learned from React to recreate a previous ecommerce website done with Shopify. Fully functional cart, sign in/sign out, and implemented Stripe for payment method."
-          tools="React, Redux, SASS"
+          text="Revenue Forecasting using Holt-Winters and Linear Regression Model"
+          code="https://github.com/alau9/revenue-forecasting-time-series"
+          description="Adapted from a real-world revenue forecasting project.
+This portfolio version uses synthetic data while preserving the original forecasting logic, modeling approach, and business assumptions used in a production retail planning environment."
+          tools="Python, NUMPY, PANDAS"
           fineprint="*Not yet mobile compatible"
-          website="https://festivals-shred.herokuapp.com/"
+          website=""
           direction="right"
         />
         <div className="image-container">
           <img
-          data-aos="fade-left"
+            data-aos="fade-left"
             className="medium"
             src={festivalshred}
             alt="Festival-Shred-Logo"
@@ -58,16 +59,16 @@ const ProjectPage = () => {
         />
       </div>
       <div className="row">
-          <CardComponent
-            className="card"
-            text="Crown Ecommerce"
-            code="https://github.com/alau9/first-ecommerce"
-            description="Ecommerce website I made with the course 'Complete React Developer in 2022 (w/ Redux, Hooks, GraphQL)'. Created a functional cart, sign in/sign out, and implemented Stripe for payment method"
-            tools="React, Redux, SASS"
-            fineprint="*Not yet mobile compatible"
-            website="https://crwn-clothing-al-live.herokuapp.com/"
-            direction="right"
-          />
+        <CardComponent
+          className="card"
+          text="Crown Ecommerce"
+          code="https://github.com/alau9/first-ecommerce"
+          description="Ecommerce website I made with the course 'Complete React Developer in 2022 (w/ Redux, Hooks, GraphQL)'. Created a functional cart, sign in/sign out, and implemented Stripe for payment method"
+          tools="React, Redux, SASS"
+          fineprint="*Not yet mobile compatible"
+          website="https://crwn-clothing-al-live.herokuapp.com/"
+          direction="right"
+        />
         <div className="image-container">
           <img
             data-aos="fade-left"
