@@ -49,7 +49,7 @@ const Nav = () => {
           <div>
             <span
               className="description"
-              onClick={() => openInNewTab(Pdf)}
+              onClick={() => openInNewTab()}
             >
               Resume
             </span>
