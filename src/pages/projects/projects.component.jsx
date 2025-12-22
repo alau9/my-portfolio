@@ -23,7 +23,7 @@ const ProjectPage = () => {
           description="A retail revenue forecasting model using synthetic data, applying Holt-Winters and linear regression to support assortment, inventory, and financial planning across channels and categories."
           tools="Python, NUMPY, PANDAS"
           fineprint=""
-          website=""
+          projectPath="/projects/sales-forecasting-retail"
           direction="right"
         />
         <div className="image-container">
@@ -49,10 +49,11 @@ const ProjectPage = () => {
         <CardComponent
           className="card"
           text="Merchandise Performance Dashboard"
-          code=""
-          description="An interactive Power BI dashboard designed to analyze retail sales and inventory performance across channels and product categories. The project focuses on building a scalable data model and clear performance views to support merchandising and planning decisions."
+          code="https://github.com/alau9"
+          description="An interactive Power BI dashboard designed to analyze retail sales and inventory performance across channels and product categories. The project focuses on building a scalable data model and clear performance views to support merchandising and planning decisions.
+          (Work in Progress)"
           tools="Power BI"
-          website=""
+          projectPath=""
           fineprint=""
           direction="left"
         />
@@ -65,7 +66,7 @@ const ProjectPage = () => {
           description="An archive of exploratory projects focused on web development, analytics, and applied problem solving."
           tools=""
           fineprint=""
-          website=""
+          projectPath="/projects/sales-forecasting-retail"
           direction="right"
         />
         <div className="image-container">

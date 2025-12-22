@@ -1,0 +1,94 @@
+.project-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 2.5rem auto 4rem auto;
+    margin-bottom: 4rem;
+
+    /* Main content width */
+    max-width: 60vw;
+
+    @media (max-width: 768px) {
+        max-width: 90vw;
+    }
+
+    /* Title */
+    h1 {
+        font-size: 2.4rem;
+        margin-bottom: 1.5rem;
+        text-align: left;
+
+        @media (max-width: 768px) {
+            font-size: 1.8rem;
+        }
+    }
+
+    /* Overview paragraph */
+    .overview {
+        font-size: 1.4rem;
+        line-height: 1.6;
+        margin-bottom: 2.5rem;
+
+        @media (max-width: 768px) {
+            font-size: 1.1rem;
+        }
+    }
+
+    /* Section blocks */
+    section {
+        width: 100%;
+        margin-bottom: 2.5rem;
+
+        h2 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #e0e0e0;
+            padding-bottom: 0.4rem;
+
+            @media (max-width: 768px) {
+                font-size: 1.3rem;
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        ul {
+            padding-left: 1.2rem;
+
+            li {
+                font-size: 1.2rem;
+                line-height: 1.6;
+                margin-bottom: 0.6rem;
+
+                @media (max-width: 768px) {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    /* Visuals */
+    .visuals {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-bottom: 3rem;
+
+        img {
+            width: 100%;
+            border-radius: 8px;
+        }
+    }
+
+    /* GitHub link */
+    .github-link {
+        margin-top: 2rem;
+        font-size: 1.1rem;
+        text-decoration: underline;
+        align-self: flex-start;
+    }
+}

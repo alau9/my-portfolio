@@ -1,29 +1,27 @@
-import React, { useEffect, Component } from "react";
+import React, { useEffect } from "react";
+import { Routes, Route } from "react-router-dom";
+import ReactGA from "react-ga";
+
 import Nav from "./pages/nav/nav.component";
 import Footer from "./components/footer/footer.component";
+import ContactInfo from "./components/contact/contact-info.component";
+
+import ProjectPage from "./pages/projects/projects.component";
+import ProjectDetail from "./pages/project-detail/project-detail.page";
+import AboutPage from "./pages/about/about.component";
 import ContactPage from "./pages/contact/contact.component";
 
 import "./App.css";
-import ContactInfo from "./components/contact/contact-info.component";
-import { Route, Routes } from "react-router-dom";
+
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { fab } from "@fortawesome/free-brands-svg-icons";
-import {
-  faCircle,
-  faLaptop,
-  faFolder,
-  faHome,
-} from "@fortawesome/free-solid-svg-icons";
-import ProjectPage from "./pages/projects/projects.component";
-import AboutPage from "./pages/about/about.component";
-import ReactGA from "react-ga";
+import { faCircle, faLaptop, faFolder, faHome } from "@fortawesome/free-solid-svg-icons";
+
 library.add(faCircle, fab, faLaptop, faFolder, faHome);
 
 function App() {
   useEffect(() => {
     ReactGA.initialize("UA-223100036-1");
-
-    //to report page view
     ReactGA.pageview(window.location.pathname);
   }, []);
 
@@ -32,16 +30,17 @@ function App() {
       <div className="page">
         <Nav />
         <ContactInfo />
+
         <Routes>
-          <Route exact path="/" element={<ProjectPage />} />
-          <Route exact path="/projects" element={<ProjectPage />} />
-          <Route exact path="/about" element={<AboutPage />} />
-          <Route exact path="/contact" element={<ContactPage />} />
+          <Route path="/" element={<ProjectPage />} />
+          <Route path="/projects" element={<ProjectPage />} />
+          <Route path="/projects/:slug" element={<ProjectDetail />} />
+          <Route path="/about" element={<AboutPage />} />
+          <Route path="/contact" element={<ContactPage />} />
         </Routes>
       </div>
-      <div>
-        <Footer />
-      </div>
+
+      <Footer />
     </div>
   );
 }

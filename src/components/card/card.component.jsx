@@ -1,5 +1,7 @@
 import React, { useEffect } from "react";
 import Backdrop from "../backdrop/backdrop.component";
+import { Link } from "react-router-dom";
+
 
 import Modal from "../modal/modal.component.jsx"
 
@@ -29,7 +31,7 @@ const CardComponent = (props) => {
       <div className="fineprint">{props.fineprint}</div>
       <div className="tools">Tools used: {props.tools}</div>
       <div className='actions'>
-        <button className='btn' onClick={() => openInNewTab(props.website)}>See Project</button>
+        <Link to={props.projectPath} className="btn">See Project</Link>
         <button className='btn' onClick={() => openInNewTab(props.code)}>Code</button>
       </div>
     </div>

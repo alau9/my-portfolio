@@ -21,7 +21,7 @@
       font-size: 1.8rem;
     }
   }
-  
+
   .description {
     text-align: left;
     margin: 2rem;
@@ -33,7 +33,7 @@
       font-size: 1.2rem;
       height: 7rem;
       margin-bottom: 3rem;
-      
+
     }
 
     @media (max-width: 1000px) {
@@ -48,13 +48,14 @@
       font-size: .8rem;
     }
   }
+
   .actions {
     display: flex;
     justify-content: center;
     margin-top: 1.5rem;
   }
 
-  .tools{
+  .tools {
     @media (max-width: 1500px) {
       font-size: .8rem;
     }
@@ -62,18 +63,36 @@
 
 
   .btn {
-    aspect-ratio: 14/4;
-    margin-right: 1rem;
-    place-items: center;
-    padding: 1em 1em;
-    border: 0.15px solid;
-    border-radius: 2.5rem;
-    cursor: pointer;
-    background-color: white;
-    transition-duration: 0.2s;
+    display: inline-flex; // needed for Link + button parity
+    align-items: center;
+    justify-content: center;
 
-    &:hover {
-      color: rgb(76, 202, 190);
-    }
+    width: 6.5rem;
+    height: 2.5rem;
+    box-sizing: border-box;
+
+    margin-right: 1rem;
+
+    padding: 0.6em 1.2em; // 🔽 smaller than before
+    border: 0.15px solid black; // 🔁 original thin border
+    border-radius: 2.5rem;
+
+    background-color: white;
+    font-family: inherit;
+    font-size: .8rem;
+    line-height: 1; // 🔑 removes extra vertical height
+
+    color: black;
+    text-decoration: none; // fixes Link underline
+    cursor: pointer;
+
+    transition: color 0.2s ease, border-color 0.2s ease;
   }
+
+  .btn:hover {
+    color: rgb(76, 202, 190);
+    border-color: rgb(76, 202, 190); // 🔥 border lights up again
+  }
+
+
 }
